@@ -11,4 +11,4 @@ function water_Bill(wBill_old : number,wBill_new : number,water_Rate : number) :
      return waterBill; 
 }
 
-console.log(water_Bill(wBill_old ,wBill_new ,water_Rate ));
+console.log("Your water bill is :",water_Bill(wBill_old ,wBill_new ,water_Rate));
