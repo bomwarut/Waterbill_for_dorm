@@ -1,18 +1,14 @@
+var wBillval_old : string = process.argv[2];
+var wBill_old : number = Number(wBillval_old);
+var wBillval_new : string = process.argv[3];
+var wBill_new : number = Number(wBillval_new);
+var waterRate : string = process.argv[4];
+var water_Rate : number = Number(waterRate);
 
-var eBill_val : string = process.argv[2];
-var eBill : number = Number(eBill_val);
+function water_Bill(wBill_old : number,wBill_new : number,water_Rate : number) : number{
+    var amountW_present = wBill_old - wBill_new;
+    var waterBill = amountW_present * water_Rate;
+     return waterBill; 
+}
 
-// var choice : string = process.argv[2];
-// if (choice == "1"){
-//     console.log("1");
-// }else if (choice == "2"){
-//     console.log("2");
-// }else if (choice == "3"){
-//     console.log("3");
-// }else if (choice == "4"){
-//     console.log("4");
-// }else if (choice == "5"){
-//     console.log("5");
-// }else{
-//     console.log("Error please enter the number of choice");
-// }
+console.log(water_Bill(wBill_old ,wBill_new ,water_Rate ));
